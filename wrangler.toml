@@ -1,0 +1,13 @@
+name = "file-transfer-app2"
+account_id = "3cbaf2dd19db11ccceb8468841a4d865"
+workers_dev = true
+compatibility_date = "2025-07-01"
+main = "index.js"
+
+[env.production]
+name = "file-transfer-app2-prod"
+bucket_binding = "R2_BUCKET"
+
+[[env.production.r2_buckets]]
+binding = "R2_BUCKET"
+bucket_name = "my-bucket2"
